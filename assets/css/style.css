@@ -8,6 +8,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+*{
+  /* font-family: 'Trebuchet MS',sans-serif; */
+}
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -94,7 +97,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #031427;
 }
 
 .overlay-mf {
@@ -726,7 +729,7 @@ a:hover {
 }
 
 .hero .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   left: 0px;
@@ -810,11 +813,92 @@ a:hover {
 .about-mf .about-img {
   margin-bottom: 2rem;
 }
+.about-mf .about-img img{
+  border-radius: 20px!important;
+}
 
 .about-mf .about-img img {
   margin-left: 10px;
 }
+.count-cont{
+  gap: 25px;
+}
+.count{
+  border-radius: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  min-width: 45%;
+  width: 45%;
+  transition: all 500ms ease-in-out;
+}
+.count:hover{
+  background-color: #1e1e1e;
+  color: white;
+  width: 49%;
+  transition: all 500ms ease-in-out;
+}
 
+.count .text-center >.bi {
+  border-radius: 50%;
+  margin: 2px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.count .bi {
+    font-size: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.count:hover .bi{
+  font-size: 30px;
+  text-align: start;
+  zoom: 1.2;
+  transition: all 500ms ease-in-out;
+}
+.count h1 {
+  font-size: 20px;
+}
+
+.count .desc {
+  font-size: 15px;
+  text-align: center!important;
+  font-weight: bolder;
+}
+.count:hover .desc{
+ background-color: #113053;
+ border-radius: 15px;
+ padding: 6px;
+ box-sizing: border-box;
+ width: auto;
+  transition: all 500ms ease-in-out;
+}
+.lead{
+  font-size: 18px;
+  line-height: 2em;
+  /* color: black; */
+}
+ .cvd{
+  background-color: #1B1B1B;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: white!important;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+}
+
+.cvd:hover  i{
+  margin-left: 12px;
+  font-weight: bolder;
+  color: gold;
+
+  transition: all 600ms ease-in-out;
+}
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
     margin-top: 3rem;
@@ -837,17 +921,81 @@ a:hover {
   height: .7rem;
   background-color: #0078ff;
 }
+.round-modal{
+  border-radius: 15px;
+}
+.progress{
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.servicek-box {
+  background-color: white;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  
+}
+
+
+.servicek-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #021224;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.servicek-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.servicek-box .ico-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicek-box .ico-circle i {
+  line-height: 0;
+  font-size: 40px;
+}
+
+.servicek-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.servicek-box .s-description {
+  color: #4e4e4e;
+}
+
+
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: #fff;
+  background-color: transparent;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
 }
+
+.service-box:hover {
+  background-color: transparent;
+  border-bottom: 3px solid gray;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+}
+
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
@@ -1161,17 +1309,19 @@ a:hover {
 }
 
 .php-email-form input, .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 20!important;
+  box-shadow: 1 1 1 0.5 rgba(127, 137, 161, 0.25);
   font-size: 14px;
+  background-color: #ececec;
 }
 
 .php-email-form input:focus, .php-email-form textarea:focus {
-  border-color: #0078ff;
+  border-color: #051930;
 }
 
 .php-email-form input {
   padding: 10px 15px;
+  box-sizing: border-box;
 }
 
 .php-email-form textarea {
@@ -1180,7 +1330,7 @@ a:hover {
 }
 
 .php-email-form button[type="submit"] {
-  background: #0078ff;
+  background: #041529;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1188,9 +1338,35 @@ a:hover {
 }
 
 .php-email-form button[type="submit"]:hover {
-  background: #3393ff;
+  background: #08274b;
 }
-
+.more-info .list-ico li{
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  background-color: #fafafa;
+  max-width: 75%;
+  border-radius: 5px;
+}
+.socials {
+ display: flex;
+ justify-content: center;
+}
+.ico-circle1{
+  padding: 8px;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #051930;
+  display: flex;justify-content: center; align-items: center;
+  /* margin: auto!important; */
+}
+.ico-circle1:hover{
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1430,7 +1606,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  /* background: #020e1b; */
 }
 
 footer .copyright {
